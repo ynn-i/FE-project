@@ -1,0 +1,99 @@
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.progressBar {
+    appearance: none;
+    height: 10px;
+    width: 460px;
+    margin: 30px 0 60px;
+}
+.progressBar::-webkit-progress-bar {
+    background-color: #e3e4ea;
+    border-radius: 20px;
+}
+.progressBar::-webkit-progress-value {
+    background-color: #222;
+    border-radius: 20px;
+}
+.container {
+    display: flex;
+    width: 600px;
+    padding: 40px;
+    flex-direction: column;
+    gap: 60px;
+    border-radius: 16px;
+    border: 1px solid #dfe0e7;
+    box-sizing: border-box;
+}
+.questionTitle {
+    margin-bottom: 24px;
+}
+
+/* radio btn */
+.chipGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #dfe0e7;
+    cursor: pointer;
+}
+input[type='radio']:checked + label,
+input[type='checkbox']:checked + label {
+    border: 1px solid #222;
+}
+input[type='radio']:hover + label,
+input[type='checkbox']:hover + label {
+    background-color: #f3f3f6;
+}
+
+/* font */
+h2 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+}
+.subTitle {
+    color: #a3a5ae;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.question {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+}
+label,
+button {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h2,
+.subTitle,
+p,
+span,
+a,
+label,
+button {
+    font-family: 'Pretendard';
+}
