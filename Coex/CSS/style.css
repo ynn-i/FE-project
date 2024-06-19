@@ -1,0 +1,28 @@
+header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    padding: 0 80px;
+}
+.Logo {
+    background-image: url(../images/logo.svg);
+    background-size: 4rem 1.5rem;
+    width: 4rem;
+    height: 1.5rem;
+}
+.mainNav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+* {
+    color: #fff;
+}
