@@ -63,6 +63,8 @@ pre {
    */
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
 /**
@@ -298,9 +300,14 @@ template {
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
   font-size: 1rem;
+}
+
+a {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7215686275);
 }/*# sourceMappingURL=style.css.map */

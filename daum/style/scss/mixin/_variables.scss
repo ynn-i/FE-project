@@ -1,4 +1,0 @@
-@function rem($px, $base: 10) {
-    $sum: ($px / $base) * 1rem;
-    @return $sum;
-}
