@@ -307,7 +307,31 @@ body {
   font-size: 1rem;
 }
 
-a {
+footer div {
+  margin-bottom: 8px;
+}
+
+.footer-link {
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.7215686275);
+}
+
+.footer-linkList a {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7215686275);
+  position: relative;
+}
+
+.footer-linkList a::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  margin: 4px;
+}
+
+.footer-linkList a:last-child::after {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

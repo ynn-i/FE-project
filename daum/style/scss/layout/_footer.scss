@@ -1,4 +1,28 @@
-a {
+footer div {
+    margin-bottom: 8px;
+}
+
+.footer-link {
     font-size: rem(14);
     color: #000000b8;
+}
+
+.footer-linkList a {
+    font-size: rem(14);
+    color: #000000b8;
+    position: relative;
+}
+
+.footer-linkList a::after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #00000040;
+    margin: 4px;
+}
+
+.footer-linkList a:last-child::after {
+    display: none;
 }
