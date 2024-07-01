@@ -379,8 +379,8 @@ footer p {
         margin-top: -2px;
     }
     .modal-img {
-        width: 260px;
-        margin: 20px 0px;
+        width: 240px;
+        margin: 20px 0px 30px;
     }
     .mobile-break {
         display: block;
