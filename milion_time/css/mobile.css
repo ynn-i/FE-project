@@ -1,4 +1,4 @@
-@media (max-width: 380px) {
+@media screen and (max-width: 380px) {
     .title-img {
         width: 267px;
         padding: 35px;
