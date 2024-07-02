@@ -143,16 +143,30 @@ body {
   font-family: "Pretendard";
 }
 
-.mainNav a {
+.mainNav a,
+.sideNav a {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
+}
+
+.mainNav li a {
+  position: relative;
+}
+
+.btn_pink {
+  background-color: #f147ac;
+  width: 110px;
+  height: 24px;
+  border-radius: 40px;
+  padding: 4px 12px 4px 16px;
 }
 
 header {
   background-color: #222;
   display: flex;
   align-items: center;
+  padding: 0 120px;
 }
 
 .Logo {
@@ -170,13 +184,19 @@ nav {
   flex-grow: 1;
 }
 
-.mainNav {
+.mainNav,
+.sideNav {
   display: flex;
   align-items: center;
 }
 
-.mainNav a {
+.mainNav a,
+.sideNav a {
   display: block;
   padding: 20px 16px;
   box-sizing: border-box;
+}
+
+a img {
+  width: 16px;
 }/*# sourceMappingURL=style.css.map */
