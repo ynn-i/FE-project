@@ -1,0 +1,29 @@
+body,
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #171c22;
+    color: #fff;
+}
+.projects {
+    padding: 80px 120px;
+}
+.project-list {
+    display: flex;
+    gap: 16px;
+}
+a {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #272f3a;
+    border-radius: 8px;
+}
+a:hover {
+    background-color: #404c59;
+}
