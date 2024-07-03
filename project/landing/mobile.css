@@ -2,7 +2,9 @@
     header {
         justify-content: space-between;
         padding: 0 20px;
+        box-sizing: border-box;
         height: 76px;
+        width: 100%;
     }
     h1 {
         width: 92px;
@@ -16,6 +18,42 @@
         font-size: 14px;
         padding: 10px 24px;
         height: 40px;
+    }
+    .m-menu-btn {
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        background: none;
+    }
+    .m-menu {
+        position: absolute;
+        right: 0;
+        /* right: -70vw; */
+        top: 0;
+        width: 70vw;
+        max-width: 600px;
+        height: 100vh;
+        background-color: #263140;
+        display: flex;
+        display: none;
+    }
+    .m-menu-list {
+        padding: 120px 0 0 0;
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .m-menu .m-menu-btn {
+        padding: 22px;
+        width: 32px;
+        height: 32px;
+        border-radius: 0;
+        background: none;
+    }
+    .m-menu-list button {
+        margin-top: 20px;
     }
 
     /* main banner */
@@ -153,6 +191,7 @@
 
     /* footer */
     footer {
+        position: relative;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
@@ -170,5 +209,35 @@
     footer ul li img {
         width: 32px;
         height: 32px;
+    }
+    .m-footer {
+        bottom: 30px;
+        right: 20px;
+        text-align: right;
+        color: #767676;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 16px;
+    }
+
+    /* modal */
+    .modal-content {
+        width: 300px;
+        height: 300px;
+        background-size: 300px, 200px;
+        padding: 40px 0 30px;
+    }
+    .modal-title {
+        font-size: 24px;
+    }
+    .modal-title::before {
+        background-size: 60px, 62px;
+        width: 60px;
+        height: 62px;
+    }
+    .modal-text {
+        margin: 10px 0 28px;
+        padding: 0 24px;
     }
 }

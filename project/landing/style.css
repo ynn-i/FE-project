@@ -45,6 +45,10 @@ button {
     height: 50px;
     white-space: nowrap;
 }
+.m-menu,
+.m-menu-btn {
+    display: none;
+}
 
 /* main banner */
 .banner {
@@ -89,8 +93,9 @@ button {
     margin: 80px 320px 120px;
 }
 .cat-info img {
-    width: 660px;
-    height: 390px;
+    width: 100%;
+    min-width: 440px;
+    height: auto;
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px #00000040;
 }
@@ -132,11 +137,14 @@ button {
 .img-wrap {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    gap: 72px;
+    justify-content: center;
 }
 .img-wrap img {
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    object-fit: cover;
     border-radius: 30px;
 }
 .more {
@@ -219,6 +227,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 45px 320px;
+    box-sizing: border-box;
 }
 .logo {
     width: 226px;
@@ -228,4 +237,60 @@ footer {
 footer ul {
     display: flex;
     gap: 20px;
+}
+.m-footer {
+    display: none;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+    width: 600px;
+    height: 400px;
+    background: url(./images/modal-bg.png) no-repeat;
+    box-sizing: border-box;
+    padding: 60px 0 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2e9d8;
+    box-shadow: 0px 0px 30px 0px #00000033;
+}
+.modal-title {
+    color: #d97652;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+.modal-title::before {
+    content: '';
+    background: url(./images/modal-cat.png) no-repeat;
+    background-size: 110px, 112px;
+    width: 110px;
+    height: 112px;
+    display: block;
+    margin-bottom: 24px;
+    margin: 0 auto;
+}
+.modal-text {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 12px 0 38px;
 }
