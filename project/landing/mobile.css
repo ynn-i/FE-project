@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header {
         justify-content: space-between;
         padding: 0 20px;
@@ -115,6 +115,7 @@
     /* cat gallary */
     .cat-gallary {
         margin: 0 32px;
+        overflow: hidden;
     }
     .cat-gallary .title {
         font-size: 24px;
@@ -124,6 +125,7 @@
         margin: 30px 0 40px;
     }
     .img-wrap {
+        justify-content: left;
         gap: 20px;
     }
     .img-wrap img {
