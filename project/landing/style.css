@@ -170,6 +170,7 @@ button {
     gap: 140px;
     position: relative;
     margin: 0 320px 0;
+    align-items: center;
 }
 .subscribe-wrap .text-wrap {
     display: flex;
