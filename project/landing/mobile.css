@@ -112,15 +112,15 @@
         font-size: 14px;
     }
 
-    /* cat gallary */
-    .cat-gallary {
+    /* cat gallery */
+    .cat-gallery {
         margin: 0 32px;
         overflow: hidden;
     }
-    .cat-gallary .title {
+    .cat-gallery .title {
         font-size: 24px;
     }
-    .cat-gallary .text {
+    .cat-gallery .text {
         font-size: 16px;
         margin: 30px 0 40px;
     }

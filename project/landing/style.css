@@ -114,21 +114,21 @@ button {
     line-height: 1.4;
 }
 
-/* cat gallary */
-.cat-gallary {
+/* cat gallery */
+.cat-gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 320px;
 }
-.cat-gallary .title {
+.cat-gallery .title {
     color: #d97652;
     font-size: 48px;
     line-height: 1.5;
     font-weight: 700;
     text-align: center;
 }
-.cat-gallary .text {
+.cat-gallery .text {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
