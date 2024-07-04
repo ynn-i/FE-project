@@ -167,7 +167,8 @@ button {
     border-radius: 30px;
     background-color: #263140;
     display: flex;
-    gap: 140px;
+    justify-content: space-between;
+    gap: 100px;
     position: relative;
     margin: 0 320px 0;
     align-items: center;
