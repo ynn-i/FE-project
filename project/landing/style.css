@@ -138,6 +138,10 @@ button {
     text-align: center;
     margin: 40px 0 90px;
 }
+.cat-gallery .text strong {
+    color: #d97652;
+    font-weight: 700;
+}
 .img-wrap {
     display: flex;
     width: 100%;
