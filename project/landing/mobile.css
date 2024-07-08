@@ -129,7 +129,12 @@
     }
     .img-wrap {
         justify-content: left;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         gap: 20px;
+    }
+    .img-wrap::-webkit-scrollbar {
+        display: none;
     }
     .img-wrap img {
         width: 260px;
