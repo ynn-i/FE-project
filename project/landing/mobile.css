@@ -117,8 +117,7 @@
 
     /* cat gallery */
     .cat-gallery {
-        margin: 0 32px;
-        overflow: hidden;
+        padding: 0 32px;
     }
     .cat-gallery .title {
         font-size: 24px;
