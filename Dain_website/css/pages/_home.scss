@@ -1,0 +1,35 @@
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff6543;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1800px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+img {
+    width: 100%;
+}
+
+//
+.profile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.intro-text {
+    display: flex;
+}
