@@ -30,6 +30,12 @@ img {
     height: 100vh;
     display: flex;
 }
+.profile .top-info {
+    color: #fff;
+    position: absolute;
+    padding: 60px 80px;
+    font-size: 20px;
+}
 .intro-text {
     display: flex;
     width: 50%;
@@ -56,4 +62,46 @@ img {
 .profile img {
     width: 50%;
     object-fit: cover;
+}
+
+// contents
+.contents {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 120px 60px 80px;
+    box-sizing: border-box;
+}
+.contents h2 {
+    font-size: 70px;
+    font-weight: 700;
+}
+.contents ol {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    counter-reset: num;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.contents ol li {
+    display: flex;
+}
+.contents ol li::before {
+    counter-increment: num;
+    content: '0' counter(num);
+    margin-right: 32px;
+}
+.contents ol li a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contents ol li a .sub-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    display: block;
 }
