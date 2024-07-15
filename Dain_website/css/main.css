@@ -139,6 +139,17 @@ body {
   font-family: "Pretendard";
 }
 
+.index {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.index img {
+  width: 50%;
+  height: 100%;
+}
+
 .intro {
   width: 100vw;
   height: 100vh;
