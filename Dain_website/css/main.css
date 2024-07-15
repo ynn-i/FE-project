@@ -140,6 +140,53 @@ body {
   letter-spacing: -0.4px;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: -80px;
+  z-index: 1;
+  transition: top 0.3s ease-in-out;
+}
+
+header nav {
+  display: flex;
+  max-width: 1760px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+header a {
+  width: 210px;
+  height: 40px;
+  background: url(../../images/logo.png);
+  background-size: 210px 40px;
+}
+
+header button {
+  border: none;
+  background: none;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 36px;
+  font-weight: 600;
+}
+
+header button::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: url(../../images/arr_down.svg);
+  background-size: 32px 32px;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
 .index {
   width: 100vw;
   height: 100vh;
