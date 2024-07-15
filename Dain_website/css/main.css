@@ -234,6 +234,10 @@ body {
   word-break: keep-all;
 }
 
+.orange-tatto {
+  color: #ad2715;
+}
+
 .intro {
   width: 100vw;
   height: 100vh;
