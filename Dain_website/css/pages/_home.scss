@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 60px 80px;
+    padding: 140px 80px 60px 80px;
     box-sizing: border-box;
     font-size: 20px;
 }
@@ -109,7 +109,7 @@ img {
 // mobile
 @media screen and (max-width: 768px) {
     .intro {
-        padding: 20px 24px;
+        padding: 100px 24px 20px 24px;
         font-size: 16px;
     }
     .top-info {

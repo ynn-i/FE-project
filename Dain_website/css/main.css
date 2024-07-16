@@ -130,6 +130,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -143,9 +147,10 @@ body {
 header {
   width: 100%;
   position: fixed;
-  top: -80px;
   z-index: 1;
   transition: top 0.3s ease-in-out;
+  background-color: #fff;
+  padding: 16px 0;
 }
 
 header nav {
@@ -153,7 +158,6 @@ header nav {
   max-width: 1760px;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 16px 0;
 }
 
 header a {
@@ -187,6 +191,22 @@ header button::after {
   right: 0;
 }
 
+@media screen and (max-width: 480px) {
+  header nav {
+    max-width: 440px;
+  }
+  header a {
+    width: 105px;
+    height: 20px;
+    background-size: 105px 20px;
+  }
+  header button {
+    padding-right: 32px;
+  }
+  header button::after {
+    top: -6px;
+  }
+}
 .index {
   width: 100vw;
   height: 100vh;
@@ -293,7 +313,7 @@ header button::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 60px 80px;
+  padding: 140px 80px 60px 80px;
   box-sizing: border-box;
   font-size: 20px;
 }
@@ -408,7 +428,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .intro {
-    padding: 20px 24px;
+    padding: 100px 24px 20px 24px;
     font-size: 16px;
   }
   .top-info {

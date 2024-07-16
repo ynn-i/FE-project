@@ -1,16 +1,16 @@
 header {
     width: 100%;
     position: fixed;
-    top: -80px;
     z-index: 1;
     transition: top 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 16px 0;
 }
 header nav {
     display: flex;
     max-width: 1760px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 16px 0;
 }
 header a {
     width: 210px;
@@ -39,4 +39,21 @@ header button::after {
     position: absolute;
     top: 4px;
     right: 0;
+}
+
+@media screen and (max-width: 480px) {
+    header nav {
+        max-width: 440px;
+    }
+    header a {
+        width: 105px;
+        height: 20px;
+        background-size: 105px 20px;
+    }
+    header button {
+        padding-right: 32px;
+    }
+    header button::after {
+        top: -6px;
+    }
 }
