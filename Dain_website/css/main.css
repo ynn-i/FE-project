@@ -163,7 +163,7 @@ header nav {
 header a {
   width: 210px;
   height: 40px;
-  background: url(../../images/logo.png);
+  background: url(../../images/kkakka02.png);
   background-size: 210px 40px;
 }
 
@@ -183,7 +183,7 @@ header button::after {
   content: "";
   width: 32px;
   height: 32px;
-  background: url(../../images/arr_down.svg);
+  background: url(./images/arr_down.svg);
   background-size: 32px 32px;
   display: inline-block;
   position: absolute;
