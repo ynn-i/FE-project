@@ -99,6 +99,7 @@
             listMember.addEventListener('click', function (event) {
                 if (event.target.tagName === 'BUTTON') {
                     btnSelect.textContent = event.target.textContent;
+                    btnSelect.classList.remove('on');
                 }
             });
         </script>
