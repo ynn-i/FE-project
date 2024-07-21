@@ -1,3 +1,7 @@
+// 투두리스트 인풋박스 나타나기
+
+
+// 투두리스트 삭제하기
 const listCont = document.querySelector('.list-cont');
 
 listCont.addEventListener('click', function (event) {

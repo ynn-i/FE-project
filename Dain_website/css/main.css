@@ -139,6 +139,11 @@ a {
   color: inherit;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 body {
   font-family: "Pretendard";
   letter-spacing: -0.4px;
@@ -157,38 +162,27 @@ header nav {
   display: flex;
   max-width: 1760px;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
 header a {
   width: 210px;
   height: 40px;
-  background: url(../../images/kkakka02.png);
+  background: url(../../images/logo.png);
   background-size: 210px 40px;
 }
 
 header button {
-  border: none;
-  background: none;
   padding: 0;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 36px;
   font-weight: 600;
 }
 
-header button::after {
-  content: "";
+.icon-32 {
   width: 32px;
-  height: 32px;
-  background: url(./images/arr_down.svg);
-  background-size: 32px 32px;
-  display: inline-block;
-  position: absolute;
-  top: 4px;
-  right: 0;
 }
 
 @media screen and (max-width: 480px) {
