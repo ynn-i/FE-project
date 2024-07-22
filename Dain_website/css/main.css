@@ -144,9 +144,32 @@ button {
   border: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+}
+
+.hidden {
+  display: none;
+}
+
 body {
   font-family: "Pretendard";
   letter-spacing: -0.4px;
+}
+
+.header-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 6px;
 }
 
 header {
@@ -166,7 +189,7 @@ header nav {
   margin: 0 auto;
 }
 
-header a {
+.logo {
   width: 210px;
   height: 40px;
   background: url(../../images/logo.png);
@@ -179,6 +202,31 @@ header button {
   align-items: center;
   justify-content: center;
   font-weight: 600;
+}
+
+.header-modal {
+  position: absolute;
+  width: 250px;
+  top: 100px;
+  right: 4%;
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.header-modal li {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.header-modal li a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-modal li:hover {
+  color: #ff6543;
+  background: #fff2ce;
 }
 
 .icon-32 {

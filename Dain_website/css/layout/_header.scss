@@ -13,7 +13,7 @@ header nav {
     align-items: center;
     margin: 0 auto;
 }
-header a {
+.logo {
     width: 210px;
     height: 40px;
     background: url(../../images/logo.png);
@@ -25,6 +25,27 @@ header button {
     align-items: center;
     justify-content: center;
     font-weight: 600;
+}
+.header-modal {
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    right: 4%;
+    padding: 16px;
+    border-radius: 12px;
+    background: #fff;
+}
+.header-modal li {
+    padding: 12px;
+    border-radius: 8px;
+}
+.header-modal li a {
+    display: flex;
+    justify-content: space-between;
+}
+.header-modal li:hover {
+    color: #ff6543;
+    background: #fff2ce;
 }
 .icon-32 {
     width: 32px;
