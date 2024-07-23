@@ -172,6 +172,14 @@ body {
   margin-bottom: 6px;
 }
 
+@media screen and (max-width: 480px) {
+  .header-modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 6px;
+  }
+}
 header {
   width: 100%;
   position: fixed;
@@ -236,17 +244,24 @@ header button {
 @media screen and (max-width: 480px) {
   header nav {
     max-width: 440px;
+    padding: 0 20px;
   }
-  header a {
+  header .logo {
     width: 105px;
     height: 20px;
     background-size: 105px 20px;
   }
   header button {
-    padding-right: 32px;
+    padding-right: 0;
   }
   header button::after {
     top: -6px;
+  }
+  .header-modal {
+    width: 200px;
+    top: 80px;
+    right: 4%;
+    padding: 8px;
   }
 }
 .index {
