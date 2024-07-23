@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.header-modal');
-    const toggleModalBtn = document.querySelector('header-modal-btn');
+    const toggleModalBtn = document.querySelector('.header-modal-btn');
 
     toggleModalBtn.onclick = function () {
         if (modal.style.display === 'block') {
