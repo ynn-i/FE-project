@@ -27,10 +27,11 @@ header button {
     font-weight: 600;
 }
 .header-modal {
+    display: none;
     position: absolute;
     width: 250px;
     top: 100px;
-    right: 4%;
+    right: 10%;
     padding: 16px;
     border-radius: 12px;
     background: #fff;

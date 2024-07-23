@@ -1,14 +1,17 @@
-// let prevScrollPos = window.scrollY;
-// const header = document.querySelector('header');
-// const headerHeight = header.offsetHeight;
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.querySelector('.header-modal');
+    const toggleModalBtn = document.querySelector('header-modal-btn');
 
-// window.onscroll = function () {
-//     const currentScrollPos = window.scrollY;
-//     if (prevScrollPos > currentScrollPos) {
-//         header.style.top = '0';
-//     } else {
-//         header.style.top = `-${headerHeight}px`;
-//     }
-
-//     prevScrollPos = currentScrollPos;
-// };
+    toggleModalBtn.onclick = function () {
+        if (modal.style.display === 'block') {
+            modal.style.display = 'none';
+        } else {
+            modal.style.display = 'block';
+        }
+    };
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+});
