@@ -216,7 +216,7 @@ header button {
   position: absolute;
   width: 250px;
   top: 100px;
-  right: 4%;
+  right: 8%;
   padding: 16px;
   border-radius: 12px;
   background: #fff;
@@ -314,6 +314,30 @@ header button {
   margin-top: 24px;
 }
 
+@media screen and (max-width: 480px) {
+  .index {
+    height: auto;
+    flex-direction: column;
+  }
+  .index img {
+    width: 100%;
+  }
+  .index-contents {
+    width: 100%;
+    padding: 32px 24px;
+  }
+  .index-title {
+    font-size: 24px;
+  }
+  .index-subtitle {
+    font-size: 20px;
+    padding: 12px 0 0 0;
+    margin-bottom: 80px;
+  }
+  .index-text {
+    margin-top: 20px;
+  }
+}
 .project {
   width: 100vw;
   height: 100vh;
@@ -362,6 +386,29 @@ header button {
   color: #ad2715;
 }
 
+@media screen and (max-width: 480px) {
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 32px 24px;
+  }
+  .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-title {
+    font-size: 20px;
+  }
+  .project-subtitle {
+    font-size: 18px;
+    margin: 8px 0 40px 0;
+  }
+  .project-text {
+    max-width: 320px;
+    font-size: 16px;
+  }
+}
 .intro {
   width: 100vw;
   height: 100vh;
