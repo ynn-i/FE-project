@@ -109,7 +109,6 @@
 .orange-tatto {
     color: #ad2715;
 }
-
 @media screen and (max-width: 480px) {
     .project {
         width: 100%;
@@ -132,4 +131,9 @@
         max-width: 320px;
         font-size: 16px;
     }
+}
+
+// project_img
+.project-gallery li img {
+    display: block;
 }
