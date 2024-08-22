@@ -1,0 +1,400 @@
+/* text */
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff');
+    font-display: swap;
+}
+
+body,
+input,
+button,
+div,
+p,
+span {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    text-align: center;
+}
+.title-img {
+    width: 564px;
+    padding: 74px;
+    background: url('../public/title-background.png') no-repeat center;
+    background-size: 260px, 265px;
+    margin-top: 120px;
+}
+.quotes {
+    font-family: 'OTEnjoystoriesBA';
+    font-weight: 700;
+    font-size: 36px;
+    color: #f5df4d;
+    margin: 46px 0 78px;
+}
+body {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.intro {
+    position: relative;
+    padding: 0 60px;
+    line-height: 1.8;
+}
+.intro strong {
+    font-weight: 700;
+    font-size: 24px;
+}
+.intro::before {
+    content: '';
+    background-image: url('../public/intro-L.svg');
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.intro::after {
+    content: '';
+    background-image: url('../public/intro-R.svg');
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 102px 0 115px;
+}
+.input-wrap .sentence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.input-wrap .sentence span,
+.result p span,
+.result p strong {
+    white-space: nowrap;
+}
+
+.btn {
+    position: relative;
+}
+.pointer {
+    position: absolute;
+    width: 64px;
+    top: 14px;
+    left: 572px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 147px 0 127px;
+}
+.result p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.result strong {
+    font-size: 72px;
+    font-weight: 700;
+}
+body {
+    background-color: #5b2386;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* input */
+input {
+    width: 230px;
+    height: 56px;
+    border-radius: 7px;
+    font-size: 24px;
+    color: #090909;
+    text-align: center;
+}
+input::placeholder {
+    color: #babcbe;
+}
+
+/* button */
+button {
+    background-color: #fcee21;
+    color: #5b2386;
+    padding: 20px 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 0px #00000080;
+    font-weight: 700;
+    font-size: 24px;
+}
+.primary-btn {
+    border-radius: 40px;
+}
+.secondary-btn {
+    background-color: #fff;
+    color: #5b2386;
+    padding: 20px 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 0px #00000080;
+    font-weight: 700;
+    font-size: 24px;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* modal */
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+    position: absolute;
+    background-color: #ffffff;
+    width: 800px;
+    height: 800px;
+    padding: 70px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.modal-title,
+.modal-text {
+    font-family: 'OTEnjoystoriesBA';
+    font-weight: 700;
+    color: #5b2386;
+}
+.modal-title::after {
+    content: '화이팅!!♥♥♥';
+    font-size: 96px;
+}
+.modal-text {
+    font-size: 36px;
+    margin-top: 4px;
+}
+.modal-img {
+    width: 430px;
+    margin: 30px 0 75px;
+}
+#modal.hidden {
+    display: none;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 130px 0 70px;
+}
+footer img {
+    width: 125px;
+}
+footer p {
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* 모바일 반응형 css */
+@media screen and (max-width: 768px) {
+    .title-img {
+        width: 268px;
+        padding: 35px;
+        background: url('../public/title-background.png') no-repeat center;
+        background-size: 125px, 126px;
+        margin-top: 40px;
+    }
+    .quotes {
+        font-size: 22px;
+        color: #f5df4d;
+        margin: 30px 0 60px;
+    }
+    body {
+        font-size: 14px;
+        margin: 0 20px;
+    }
+    .intro {
+        position: relative;
+        padding: 0 10px;
+        line-height: 1.8;
+    }
+    .intro strong {
+        font-size: 14px;
+    }
+    .intro::before {
+        content: '';
+        background-image: url('../public/intro-L.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .intro::after {
+        content: '';
+        background-image: url('../public/intro-R.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .input-wrap {
+        gap: 18px;
+        margin: 60px 0 50px;
+    }
+    .input-wrap .sentence {
+        flex-wrap: wrap;
+        gap: 16px 8px;
+    }
+
+    .pointer {
+        position: absolute;
+        width: 43px;
+        top: 30px;
+        left: 246px;
+    }
+
+    .result {
+        gap: 14px;
+        margin: 60px 0 50px;
+    }
+    .result p {
+        gap: 8px;
+    }
+    .result strong {
+        font-size: 24px;
+    }
+
+    /* input */
+    input {
+        width: 156px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    /* button */
+    button {
+        padding: 20px 36px;
+        border-radius: 16px;
+        box-shadow: 0px 0px 10px 0px #00000080;
+        font-size: 14px;
+    }
+    .big-btn {
+        width: 240px;
+    }
+    .primary-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .secondary-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .btn-wrap {
+        display: flex;
+        gap: 12px;
+    }
+
+    /* modal */
+    #modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #modal-content {
+        position: absolute;
+        background-color: #ffffff;
+        width: 330px;
+        height: 500px;
+        padding: 40px 0;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+
+    .modal-title,
+    .modal-text {
+        font-family: 'OTEnjoystoriesBA';
+        font-weight: 700;
+        color: #5b2386;
+    }
+    .modal-title::after {
+        content: '화이팅!!';
+        font-size: 64px;
+    }
+    .modal-text {
+        font-size: 36px;
+        margin-top: -2px;
+    }
+    .modal-img {
+        width: 240px;
+        margin: 20px 0px 30px;
+    }
+    .mobile-break {
+        display: block;
+    }
+}
